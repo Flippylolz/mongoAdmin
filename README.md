@@ -1,24 +1,18 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+задача тобі на ресьорч
+треба розібратись що таке монгодб і з чим її кушають
+створити проект
+в якому побудувати сті модель івентів
+з монгодб
+тобто буде
+мейн клас Post від якого будуть дітки Event, Article, Tweet
+це буде інформаційний портал
+можливості для користувачів створювати пости немає
+все з адмінки лише
+будь-який користувач коли заходить на сайт бачить перелік категорій
+All, Events, Articles, Tweets
+при натиску на яких, за допомогою jquery  filter буде фільтруватись
+для адмінки юзай той що проще
+rails_admin
+це все
+естімейт тиждень
+задавай свои ответы
