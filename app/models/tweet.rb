@@ -1,3 +1,4 @@
 class Tweet < Post
-  field :body, type: Text
+  field :tweet_id, type: String
+  field :source, type: String
 end

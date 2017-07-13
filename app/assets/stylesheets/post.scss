@@ -1,3 +1,52 @@
-// Place all the styles related to the Post controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+$mainColor: #1ECD97;
+
+h1{
+  text-align: center;
+  color: $mainColor;
+  font: bold 50px Arial;
+  padding: 10px;
+  border-bottom: 1px solid;
+  width: 250px;
+  margin: 0 auto 25px;
+}
+
+.toggles{
+  width: 800px;
+  margin: auto;
+  display: block;
+
+  clear: both;
+  overflow: hidden;
+}
+
+button{
+  border: 2px solid $mainColor;
+  border-radius: 40px;
+  color: $mainColor;
+  display: block;
+  float: left;
+  margin: auto;
+  padding: 10px;
+  width: 23%;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 0 5px;
+}
+
+.posts{
+  width: 800px;
+  margin: 2em auto;
+
+  div{
+    font: 16px/250px Arial;
+    width: 245px;
+    height: 250px;
+    float: left;
+    margin: 10px;
+    display: block;
+    text-align: center;
+    background: $mainColor;
+    color: #fff;
+  }
+
+}
