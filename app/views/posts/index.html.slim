@@ -5,5 +5,4 @@
   button#tweets Tweets
   button#articles Articles
   button#events Events
-.posts
-  = render @posts
+.posts = render partial: 'post', collection: @posts, as: :post
