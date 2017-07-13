@@ -6,6 +6,4 @@
   button#articles Articles
   button#events Events
 .posts
-  .tweets.post  = render 'tweet'
-  .articles.post = render 'article'
-  .events.post = render 'event'
+  = render @posts
