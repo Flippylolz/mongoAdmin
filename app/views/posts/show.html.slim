@@ -1,1 +1,39 @@
-h1 Show
+h1 = "#{@post.class.to_s} Show"
+.page-header
+  = link_to posts_path, class: 'btn btn-default' do
+    span.glyphicon.glyphicon-list-alt
+    |  Back
+p
+  strong title
+  = ": #{@post.title}"
+  br
+  strong body
+  = ": #{@post.body}"
+  br
+  strong is_approved
+  = ": #{@post.is_approved}"
+  br
+  strong prepared_by
+  = ": #{@post.prepared_by}"
+  - if @post.class.to_s == 'Event'
+    br
+    strong manager
+    = ": #{@post.manager}"
+    br
+    strong place
+    = ": #{@post.place}"
+    br
+  - if @post.class.to_s == 'Article'
+    br
+    strong keywords
+    = ": #{@post.keywords}"
+    br
+    strong reviewer
+    = ": #{@post.reviewer}"
+  - if @post.class.to_s == 'Tweet'
+    br
+    strong source
+    = ": #{@post.source}"
+    br
+    strong tweet_id
+    = ": #{@post.tweet_id}"

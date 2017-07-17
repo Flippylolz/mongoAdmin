@@ -1,2 +1,3 @@
 .post class="#{post.class.to_s.downcase}s"
   = post.title
+  = link_to 'Show', post_path(post)
