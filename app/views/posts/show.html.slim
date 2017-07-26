@@ -4,36 +4,7 @@ h1 = "#{@post.class.to_s} Show"
     span.glyphicon.glyphicon-list-alt
     |  Back
 p
-  strong title
-  = ": #{@post.title}"
-  br
-  strong body
-  = ": #{@post.body}"
-  br
-  strong is_approved
-  = ": #{@post.is_approved}"
-  br
-  strong prepared_by
-  = ": #{@post.prepared_by}"
-  - if @post.class.to_s == 'Event'
+  - @post.attribute_names.delete_if{|a| a=~ /^_/}.each do |attribute|
+    strong = attribute
+    = ": #{@post.public_send(attribute)}"
     br
-    strong manager
-    = ": #{@post.manager}"
-    br
-    strong place
-    = ": #{@post.place}"
-    br
-  - if @post.class.to_s == 'Article'
-    br
-    strong keywords
-    = ": #{@post.keywords}"
-    br
-    strong reviewer
-    = ": #{@post.reviewer}"
-  - if @post.class.to_s == 'Tweet'
-    br
-    strong source
-    = ": #{@post.source}"
-    br
-    strong tweet_id
-    = ": #{@post.tweet_id}"
